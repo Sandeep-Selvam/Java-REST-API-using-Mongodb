@@ -2,7 +2,29 @@
 
 This java application is created with endpoints for searching, creating and deleting from a mongodb database.
 
-### RestapiApplication 
+## Dependencies
+
+1. Lombok
+2. Spring Web
+3. Spring Data MongoDB
+4. Spring Boot DevTools
+5. Spring Boot Actuator
+
+## Mongodb Configuration
+
+### application.yml
+
+This is a easiest way to configure with minimal details, so, I tried with .yml file
+
+    spring:
+        data:
+            mongodb:
+                host: 127.0.0.1
+                database: Sample
+                port: 27017
+
+## RestapiApplication file
+
 This is a Java program for a RESTful API developed using the Spring Boot framework. The code is contained in the "RestapiApplication" class, which is located in the package "com.myrestapi.restapi".
 
 The "@SpringBootApplication" annotation is used to indicate that this is the main Spring Boot application class. It enables the automatic configuration of Spring Boot and scans the classpath for components, configurations, and services.
@@ -15,7 +37,6 @@ Overall, this program provides a simple and efficient way to develop and deploy 
 
 
 ## Model class for Server
-
 
 This is a Java class called "Server" which represents a server entity for a RESTful API. It is annotated with "@Document" from the Spring Data MongoDB library which indicates that this class is mapped to a MongoDB collection.
 
